@@ -21,7 +21,6 @@ app.post('/monthpaymentcalculation', function (req, res) {
      monthPayment += 200;
   }
 
-   console.log("Got a POST request for the homepage", req.body);
    res.json({ monthPayment: monthPayment })
 })
 

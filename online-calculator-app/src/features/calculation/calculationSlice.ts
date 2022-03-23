@@ -11,7 +11,6 @@ export const calculateLoan = createAsyncThunk(
   "loan/fetchLoanAmount",
   async (data: LoanRequestData) => {
     const response = await client.post("/monthpaymentcalculation", data);
-    console.log("RESPONSE:", response);
     return response.data;
   }
 );
